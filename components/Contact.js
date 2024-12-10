@@ -42,7 +42,7 @@ const Contact = (Props) => {
         transition={{ duration: 1.4, type: "spring", stiffness: 150 }}
         className="w-[90%] max-w-[600px] p-6 bg-[#121212] rounded-xl shadow-lg"
       >
-        <h1 className="text-3xl font-bold text-center mb-6">Let's Connect</h1>
+        <h1 className="text-3xl font-bold text-center mb-6">Lets Connect</h1>
         <div className="space-y-4">
           {/* WhatsApp Section */}
           <div className="flex items-center justify-between bg-[#1f1f1f] p-4 rounded-lg">
