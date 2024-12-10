@@ -13,7 +13,6 @@ import LoadingSkeleton from "@/components/LoadingSkeleton";
 
 import Navbar from "@/components/Navbar";
 
-import Head from "next/head";
 import axios from "axios";
 
 const Page = () => {

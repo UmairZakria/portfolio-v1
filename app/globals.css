@@ -6,13 +6,17 @@
 body {
   transition: background-color 0.3s, color 0.3s;
 }
+/* styles/globals.css */
+
 
 body.dark {
-  background-color: #1a202c;
+  /* background: linear-gradient( #0a1e3f ); Most black with a hint of blue */
+  background-color: #0a1e3f ;
   color: #f7fafc;
 }
 
 [class='dark'] {
-  background-color:  #1E1E1E;
+  background-color: #0a1e3f ;
+  /* background: linear-gradient( #0a1e3f ); Most black with a hint of blue */
   color: #ffffff; /* Dark mode text color */
 }
