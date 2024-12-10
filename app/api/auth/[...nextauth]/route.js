@@ -46,7 +46,7 @@ export const authOptions = {
       return token;
     },
   },
-  secret: process.env.NEXTAUTH_SECRET,
+  secret: 'UmairZakria420smell',
 };
 
 const handler = NextAuth(authOptions);
