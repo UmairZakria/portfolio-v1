@@ -10,6 +10,7 @@ import me from '@/public/ui/me2.jpg'
 import Contact from "@/components/Contact";
 import Footer from "@/components/footer";
 import LoadingSkeleton from "@/components/LoadingSkeleton";
+import Marquee from 'react-fast-marquee';
 
 import Navbar from "@/components/Navbar";
 
@@ -132,11 +133,42 @@ const Page = () => {
 
           </div>
           <div className="border-t-2 w-full dark:border-gray-500"></div>
+          <div className="h-auto  py-1 my-9  bg-transparent w-full  ">
+            <Marquee speed={30} direction='right' className="text-white h-full py-4 mt-8 text-md">
+
+
+
+              {data.map((data, index) => (
+                <div key={index} className='bg-transparent relative group rounded-xl w-[250px]  mx-10   h-[200px]'>
+
+                  <img
+                    
+                    src={data.imgs[0]}
+                    className=" w-full hover:shadow-2xl object-fill hover:shadow-black cursor-pointer h-full     "
+
+
+                  />
+                  <motion.div
+                  initial={{opacity:0}}
+                  whileInView={{opacity:1 }}
+                  transition={{duration:0.5}}
+
+                  className="absolute group-hover:block hidden bg-[#0000008c] text-xl p-4 w-full bottom-0  ">
+                    <div>{data.name}</div>
+                  </motion.div>
+
+                </div>
+              ))}
+
+            </Marquee>
+
+
+          </div>
           <h1 className='p-4 py-10 text-3xl md:text-6xl font-semibold text-center'>My Work, My Passion</h1>
           <div
 
             id='move'
-            className='    flex flex-wrap items-center justify-around  gap-8  p-2  mx-auto w-full  h-auto'>
+            className='    flex flex-wrap items-center justify-center   gap-20  p-2  mx-auto w-full  h-auto'>
             {data.map((data) => (
 
               <Cardpro key={data._id} name={data.name} discription={data.discription} skills={data.skills} sourcelink={data.sourcelink} images={data.imgs} />

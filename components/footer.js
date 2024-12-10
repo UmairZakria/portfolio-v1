@@ -8,18 +8,22 @@ const Footer = () => {
         <div className='font-brittany text-[70px] '>
             Umair zakria
         </div>
+        <div className='flex flex-wrap items-center justify-between gap-20'>
+
         <div className=' flex flex-col flex-wrap gap-3 text-lg '>
-            <Link className='text-blue-800 underline dark:text-blue-600' href="/">Home</Link>
-            <Link className='text-blue-800 underline dark:text-blue-600' href="/resume.pdf">Resume</Link>
+            <Link className='text-blue-800 hover:underline dark:text-blue-600' href="/">Home</Link>
+            <Link className='text-blue-800 hover:underline dark:text-blue-600' href="/resume.pdf">Resume</Link>
 
 
         </div>
         <div className=' flex flex-col flex-wrap gap-3 text-lg '>
-             <Link className='text-blue-800 underline dark:text-blue-600' href="/Article">Articles</Link>
+             <Link className='text-blue-800 hover:underline dark:text-blue-600' href="/Article">Articles</Link>
        
-            <Link className='text-blue-800 underline dark:text-blue-600' href="/Login">Login</Link>
+            <Link className='text-blue-800 hover:underline dark:text-blue-600' href="/Login">Login</Link>
 
         </div>
+        </div>
+
         
       
     </div>
