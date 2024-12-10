@@ -88,7 +88,7 @@ const Page = () => {
                 initial={{ y: 100, scaleY: 0, opacity: 0.3 }}
                 animate={{ y: 0, scaleY: 1, opacity: 1 }}
                 transition={{ delay: 0.7, duration: 0.8, type: 'spring', stiffness: 150 }}
-                className="flex gap-3 text-4xl md:text-7xl">
+                className="flex gap-3 text-4xl md:bg-[#424b64] md:p-8 md:dark:text-white md:text-7xl">
 
 
                 <span className=''>
