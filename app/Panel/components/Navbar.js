@@ -24,6 +24,12 @@ const Navbar = () => {
                 >
                     Add Project
                 </Link>
+                <Link
+                className='text-xl'
+                    href={"/Panel/Message"}
+                >
+                    Messages
+                </Link>
                 <Link 
                 className='text-xl'
                 

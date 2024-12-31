@@ -2,6 +2,8 @@
 import localFont from "next/font/local";
 
 import "./globals.css";
+import Script from "next/script";
+
 
 import { ThemeProvider } from "../components/theme-provider"
 
@@ -40,11 +42,26 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-NYBTL36LZ3"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-NYBTL36LZ3');
+          `}
+        </Script>
+
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${brittany.variable} ${ubuntu.variable} overflow-x-hidden `}
       >
         <ThemeProvider>
-            {children}
+          {children}
         </ThemeProvider>
       </body>
     </html>

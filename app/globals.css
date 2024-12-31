@@ -4,15 +4,21 @@
 
 
 body {
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.4s, color 0.4s;
+  
 }
 
+
+
 body.dark {
-  background-color: #091535;
+  background-color: #222b30;
   color: #f7fafc;
 }
 
 [class='dark'] {
-  background-color:  #091535 ;
+  background-color:  #222b30 ;
   color: #ffffff; /* Dark mode text color */
+}
+[class='light'] {
+  background-color: #FAFAF0;
 }

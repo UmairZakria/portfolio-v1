@@ -48,7 +48,7 @@ const Cardpro = (Props) => {
             y: 200
 
           }}
-          whileHover={{ scale: 1.02, cursor: 'pointer' }}
+          whileHover={{ scale: 1.01, cursor: 'pointer' }}
           whileTap={{ scale: 0.99 }}
           whileInView={{
             opacity: 1,
@@ -64,12 +64,12 @@ const Cardpro = (Props) => {
           }}
           viewport={{ once: true }}
 
-          className=' flex flex-col  h-auto w-full md:w-[480px]'>
+          className=' flex flex-col  h-auto w-full md:w-[450px]'>
           <div className='h-full relative '>
 
-            <img onClick={() => handelscreen(Props.images)} className=' h-[260px] w-full rounded-t-xl border dark:border-none    object-cover ' src={indeximage} alt="image" />
+            <img onClick={() => handelscreen(Props.images)} className=' h-[300px] w-full rounded-xl      object-cover ' src={indeximage} alt="image" />
             
-            <motion.div
+            {/* <motion.div
 
               whileHover={{ scale: 1.2, cursor: 'pointer' }}
               className='absolute bottom-3 group shadow-lg shadow-gray-700 rounded-md  right-3 size-[90px] border border-gray-400'>
@@ -103,45 +103,35 @@ const Cardpro = (Props) => {
                 ))
               }
 
-            </motion.div>
+            </motion.div> */}
           </div>
 
           <div
 
-            className='p-2 flex flex-col    py-6 border-t-0 rounded-b-3xl  border-gray-400 gap-4 border'>
+            className=' flex flex-col    py-6  border-gray-400 gap-4 '>
             <div className='flex items-center  flex-wrap justify-between w-full'>
 
 
-              <h1 className='text-3xl font-semibold '>{Props.name}</h1>
-              <Link target='_blank' href={Props.sourcelink}
-                className='px-6 py-2 text-lg bg-black border-black   dark:bg-[#6aecf8] border dark:border-[#6aecf8] hover:bg-transparent dark:hover:bg-transparent dark:hover:text-white  hover:text-black transition-all ease-in-out duration-1000 mt-5 text-white dark:text-black'
-              >Preview</Link>
+              <h1 className='text-2xl font-semibold '>{Props.name}</h1>
+  
             </div>
             <div
-              // onClick={() => handelscreen(Props.images)}
               onClick={toggleText}
 
               className={`text-[16px]   text-gray-700
-           ${isExpanded ? "" : "line-clamp-3"
+           ${isExpanded ? "" : "line-clamp-2"
                 }
           dark:text-gray-400`}>
             {Props.discription}
               {!isExpanded && <span onClick={toggleText}  className="text-blue-500"> Read More</span>}
               {isExpanded && <span onClick={toggleText} className="text-blue-500"> Show Less</span>}
             </div>
-            <div className='space-y-2'
-              onClick={() => handelscreen(Props.images)}
-            >
-
-              <ul className='flex flex-wrap text-blue-600 dark:text-[#6aecf8] items-center gap-5'>
-                {
-                  Props.skills.map((skill) => (
-                    <motion.li whileHover={{ scale: 1.08, fontWeight: '600' }} transition={{ duration: 0.3 }} key={skill} >{skill}</motion.li>
-                  ))
-                }
-              </ul>
-
-            </div>
+            <Link target='_blank' href={Props.sourcelink}
+                className='text-lok flex items-center  gap-3 underline'
+              >
+                <img src="https://img.icons8.com/material-outlined/24/ffd401/external-link.png" alt="" />
+                Preview</Link>
+ 
 
 
 

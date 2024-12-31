@@ -14,6 +14,9 @@ module.exports = {
       fontFamily: {
         brittany : ["var(--font-brittany)"],
         ubuntu : ["var(--font-ubuntu)"],
+      },
+      colors:{
+        lok: '#ffd401'
       }
       
     },

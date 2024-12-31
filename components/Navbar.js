@@ -41,7 +41,7 @@ const Navbar = () => {
             >
 
                 <Link href={'/'} className='font-brittany text-[55px]  md:text-[80px] font-bold'>
-                    Umair zakria
+                    Umair  zakria
                 </Link>
 
                 <div
