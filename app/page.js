@@ -185,7 +185,7 @@ const Page = () => {
             <div className="flex w-full px-5 flex-wrap gap-4  justify-around">
 
               <div className="space-y-7 w-full md:w-auto">
-                <h1 className="text-3xl md:text-5xl lg:text-6xl  ">I'm a Professional</h1>
+                <h1 className="text-3xl md:text-5xl lg:text-6xl  ">I&apos;m a Professional</h1>
 
                 <h1 className="bg-lok text-white px-3 md:p-3 dark:bg-transparent rounded-xl  dark:text-[#ffdc2e] text-3xl md:text-5xl lg:text-6xl   dark:underline">Full Stack Developer</h1>
 
@@ -274,7 +274,7 @@ const Page = () => {
 
             <div className="container  space-y-3 mx-auto py-20">
 
-              <h1 className="text-2xl font-light px-2 text-black dark:text-white  "> As a Full Stack Developer I'm Good <br /> Fit With <span className="text-lok">These Skills 👍</span></h1>
+              <h1 className="text-2xl font-light px-2 text-black dark:text-white  "> As a Full Stack Developer I&apos;m Good <br /> Fit With <span className="text-lok">These Skills 👍</span></h1>
               <div ref={ref} className="flex gap-8  flex-wrap justify-center" >
                 <div className="bg-[#242422] w-[290px] py-4 border-b-lok border-b-2 border-0 rounded-2xl flex justify-around items-center">
 
@@ -450,7 +450,7 @@ const Page = () => {
               <div className="bg-yellow-100 dark:bg-[#222b30] flex flex-col rounded-2xl items-center gap-5 h-auto py-16 w-[320px]  ">
                 <img src="https://img.icons8.com/glyph-neue/64/ffd401/group-task.png" alt="" />
                 <h2 className="text-2xl">Good Communication</h2>
-                <p className="text-sm text-center w-3/4 text-gray-700 dark:hover:text-white dark:text-gray-300">I ensure you're always informed and involved, making the process smooth and straightforward from start to finish.</p>
+                <p className="text-sm text-center w-3/4 text-gray-700 dark:hover:text-white dark:text-gray-300">I ensure you&apos;re always informed and involved, making the process smooth and straightforward from start to finish.</p>
               </div>
               <div className="bg-yellow-100 dark:bg-[#222b30] border-b-lok border-b-4  border-0 flex flex-col rounded-2xl items-center gap-5 h-auto py-16 w-[320px]  ">
                 <img src="https://img.icons8.com/external-kmg-design-glyph-kmg-design/64/ffd401/external-award-ecommerce-kmg-design-glyph-kmg-design.png" alt="" />
