@@ -3,11 +3,11 @@ import Main from "../components/main";
 async function getPostData(title) {
     try {
         // Fetch post data
-        const resPost = await fetch(`http://localhost:3000/api/blogpost?id=${title}`, { next: { revalidate: 3600 } });
+        const resPost = await fetch(`https://umair-portfolio-eight.vercel.app/api/blogpost?id=${title}`, { next: { revalidate: 3600 } });
         const post = await resPost.json();
         
         // Fetch related posts (optional)
-        const resRelated = await fetch(`http://localhost:3000/api/blogpost`, { next: { revalidate: 3600 } });
+        const resRelated = await fetch(`https://umair-portfolio-eight.vercel.app/api/blogpost`, { next: { revalidate: 3600 } });
         const data = await resRelated.json();
 
         return { post:post.blog ,data: data.blogs };
