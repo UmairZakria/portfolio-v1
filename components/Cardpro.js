@@ -64,10 +64,10 @@ const Cardpro = (Props) => {
           }}
           viewport={{ once: true }}
 
-          className=' flex flex-col  h-auto w-full md:w-[450px]'>
+          className=' flex flex-col  shadow-2xl rounded-xl  h-auto w-full md:w-[450px]'>
           <div className='h-full relative '>
 
-            <img onClick={() => handelscreen(Props.images)} className=' h-[300px] w-full rounded-xl      object-cover ' src={indeximage} alt="image" />
+            <img onClick={() => handelscreen(Props.images)} className=' h-[300px] w-full rounded-t-xl      object-cover ' src={indeximage} alt="image" />
             
             {/* <motion.div
 
@@ -108,7 +108,7 @@ const Cardpro = (Props) => {
 
           <div
 
-            className=' flex flex-col    py-6  border-gray-400 gap-4 '>
+            className=' flex flex-col   px-3 py-6  border-gray-400 gap-4 '>
             <div className='flex items-center  flex-wrap justify-between w-full'>
 
 

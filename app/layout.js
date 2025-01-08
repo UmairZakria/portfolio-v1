@@ -4,7 +4,6 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Script from "next/script";
 
-
 import { ThemeProvider } from "../components/theme-provider"
 
 
@@ -29,16 +28,15 @@ const ubuntu = localFont({
   weight: "100 900",
 });
 
-
 export const metadata = {
-  title: " Umair Zakria Web Developer",
-  description: "",
+  title: "Umair Zakria | Web Developer Portfolio",
+  description: "Explore Umair Zakria's web development portfolio, showcasing projects built with React, Next.js, Tailwind CSS, and MongoDB. Offering expertise in front-end and back-end development with a focus on responsive design, seamless user experiences, and dynamic web applications.",
+
+  keywords: "Umair Zakria, Web Developer, React Developer, Next.js Portfolio, Tailwind CSS, MongoDB, Front-end Developer, Back-end Developer",
   icons: {
     icon: "ui/favicon.png", // Path to your favicon
-
   },
 };
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -61,6 +59,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} ${brittany.variable} ${ubuntu.variable} overflow-x-hidden `}
       >
         <ThemeProvider>
+
           {children}
         </ThemeProvider>
       </body>

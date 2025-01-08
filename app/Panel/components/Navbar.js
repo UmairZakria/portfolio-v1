@@ -22,7 +22,7 @@ const Navbar = () => {
                 className='text-xl'
                     href={"/Panel/Projects"}
                 >
-                    Add Project
+                    Project
                 </Link>
                 <Link
                 className='text-xl'
@@ -33,8 +33,8 @@ const Navbar = () => {
                 <Link 
                 className='text-xl'
                 
-                href={"/Article"}>
-                Add Article
+                href={"/Panel/Addblog"}>
+                    Article
                 </Link>
 
                 <div className='flex items-center  relative justify-center'>
