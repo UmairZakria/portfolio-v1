@@ -243,9 +243,9 @@ const Page = () => {
             <div className="flex w-full px-5 flex-wrap gap-4  justify-around">
 
               <div className="space-y-7 w-full md:w-auto">
-                <h1 className="text-3xl md:text-5xl lg:text-6xl  ">I&apos;m a</h1>
+                <h1 className="text-3xl md:text-5xl lg:text-6xl  ">I&apos;m a Full Stack</h1>
 
-                <h1 className="bg-lok text-white dark:px-0  px-3 md:p-3 dark:bg-transparent rounded-xl  dark:text-[#ffdc2e] text-3xl md:text-5xl lg:text-6xl   dark:underline">Full Stack Developer</h1>
+                <h1 className="bg-lok text-white dark:px-0  px-3 md:p-3 dark:bg-transparent rounded-xl  dark:text-[#ffdc2e] text-3xl md:text-5xl lg:text-6xl   dark:underline">Web Developer</h1>
 
               </div>
               <div className="w-full flex justify-center  md:w-1/3    ">
