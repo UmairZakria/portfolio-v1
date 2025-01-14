@@ -218,7 +218,7 @@ const Main = (Props) => {
 
                   </p>
 
-                  <button onClick={handelscreen} className="px-7 transition-all duration-300 ease-in-out py-3 hover:opacity-70 bg-lok rounded-3xl text-gray-950">Contact me</button>
+                  <button onClick={handelscreen} className="px-7 transition-all border-2 border-gray-500 dark:border-gray-200  duration-300 ease-in-out py-3 hover:opacity-70 bg-lok rounded-3xl text-gray-950">Contact me</button>
                 </div>
               </div>
             </div>
@@ -241,7 +241,7 @@ const Main = (Props) => {
                   </Link>
                 </div>
               </div>
-              <div className="rounded-full  order-1  md:order-2   w-[300px] h-[300px]">
+              <div className="rounded-full  order-1  md:order-2   w-[320px] h-[320px]">
                 <Image
                   alt="Umair Zakria"
                   onMouseMove={handleMouseMove}
@@ -251,7 +251,7 @@ const Main = (Props) => {
                     transformStyle: "preserve-3d",
                     transition: "transform 0.1s ease-out",
                   }}
-                  src={me3} className="w-full h-full object-cover rounded-full  hover:shadow-gray-100 transition-all ease-in-out duration-700 shadow-lg shadow-gray-500  "
+                  src={me3} className="w-full h-full animate-morph hover:shadow-xl  border-4 border-gray-500 dark:border-gray-200 object-cover rounded-full  hover:shadow-gray-100 transition-all ease-in-out duration-1000  shadow-gray-300  "
 
 
                 />
