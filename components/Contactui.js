@@ -41,7 +41,7 @@ const Contactui = () => {
         <div className=" ">
 
             <h1 className=" text-3xl md:text-5xl text-center py-10 z-20 font-semibold "> <span className="bg-lok dark:bg-transparent text-white p-2 dark:text-lok rounded-xl dark:underline" >Let&apos;s Talk</span></h1>
-            <div className="container mx-auto w-full flex md:flex-row flex-col-reverse bg-[#e6f1fd] dark:bg-[#1b2024]  ">
+            <div className="container mx-auto w-full flex md:flex-row flex-col-reverse shadow-lg bg-[#ffffff] dark:bg-[#1b2024]  ">
                 <div className='py-16 px-4'>
                     <div className="space-y-4">
                         {/* WhatsApp Section */}

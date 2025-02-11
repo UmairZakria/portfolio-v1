@@ -27,9 +27,15 @@ module.exports = {
           '80%': { borderRadius: '40% 70% 60% 50% / 60% 40% 70% 50%' },
           '100%': { borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%' },
         },
+        spinreverse: {
+          from: { transform: 'rotate(0deg)' },
+          to: { transform: 'rotate(-360deg)' },
+        }
       },
       animation: {
         morph: 'morph 6s infinite ease-in-out',
+        spinslow: 'spin 4s linear infinite',
+        spinreverse: 'spinreverse 4s linear infinite',
       },
       
     },
